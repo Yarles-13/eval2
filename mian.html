@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>Forum</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+
+
+
+<body>
+  <div class="row">
+    <div class="col s12 m8 offset-m2">
+      <div class="card" id="postCard">
+        <div class="card-content">
+          <h3>Add a New Post</h3>
+          <form onsubmit="event.preventDefault();">
+            <div class="input-field">
+              <input id="name" type="text" class="validate">
+              <label for="name">What's your name?</label>
+            </div>
+            <div class="input-field">
+              <input id="message" type="text" class="validate">
+              <label for="message">Tell us what you're thinking</label>
+            </div>
+            <div class="center">
+              <a id="submit" class="btn-floating btn-large waves-effect waves-light red">
+                <i class="material-icons">+</i>
+              </a>
+            </div>
+            <a id="viewPosts" class="btn btn-link">View Posts</a>
+          </form>
+        </div>
+      </div>
+
+     
+      <div id="posts" class="posts hide"></div>
+
+
+      <div class="center posts-page">
+        <a id="backToForm" class="btn btn-link hide">Back to Form</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+  <script src="main.js"></script>
+</body>
+
+</html>
+
+
